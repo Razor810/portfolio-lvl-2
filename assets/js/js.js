@@ -1,18 +1,9 @@
-// Mobiel navigatie-menu togglen
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.querySelector(".nav-links");
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-
-  navLinks.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") {
-      navLinks.classList.remove("show");
-    }
-  });
-}
+navToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
 
 
 // Simpele submit feedback (zonder echte backend)

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,22 +11,23 @@
 <body>
   <header class="hero" id="home">
     <nav class="nav">
-      <div class="logo">Jesse Klok</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Over mij</a></li>
-        <li><a href="#projects">Projecten</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="menu">
-        ☰
-      </button>
-    </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Over mij</a></li>
+    <li><a href="#projects">Projecten</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
 
     <div class="hero-content">
       <h1>Welkom!</h1>
       <h1>Ik ben Jesse</h1>
       <p class="hero-tagline">Software Developer in opleiding</p>
+
       <div class="hero-buttons">
         <a href="#projects" class="btn primary">Bekijk projecten</a>
         <a href="#contact" class="btn ghost">Contact</a>
@@ -40,19 +40,21 @@
       <div class="section-inner">
         <h2>Over mij</h2>
         <p>
-          Ik ben Jesse Klok, ben 16 jaar oud en ik ben een leerling van ROC
-          Midden Nederland. Ik ben een beginnend software developer die zich steeds meer ontwikkeld.
+          Ik ben Jesse Klok, 16 jaar oud en leerling van ROC Midden Nederland.
+          Ik ben een beginnend software developer die zich steeds verder ontwikkelt.
         </p>
+
         <div class="about-grid">
           <div class="about-card">
             <h3>Skills</h3>
             <ul>
-              <li>HTML, CSS </li>
+              <li>HTML, CSS</li>
               <li>JavaScript</li>
               <li>Github</li>
               <li>Figma</li>
             </ul>
           </div>
+
           <div class="about-card">
             <h3>Hobby's</h3>
             <ul>
@@ -67,66 +69,61 @@
     </section>
 
     <section class="section projects" id="projects">
-      <div class="section-inner">
-        <h2>Projecten</h2>
+  <div class="section-inner">
+    <h2>Projecten</h2>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Portfolio Website</h3>
-            <p><img src="/assets/images/screenshotportfolio.png" alt="Screenshot van het Portfolio project">
-              Dit is mijn portfolio website die ik heb gemaakt om mijn projecten te laten zien.
-            </p>
-            <p class="project-tags">HTML • CSS • JavaScript</p>
-            <a href="#" class="btn primary" target="_blank">Bekijk het</a>
+    <div class="projects-grid">
 
-          </article>
+      <article class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          <img src="/assets/images/screenshotportfolio.png" alt="Screenshot van het Portfolio project">
+          Dit is mijn portfolio website die ik heb gemaakt om mijn projecten te laten zien.
+        </p>
+        <p class="project-tags">HTML • CSS • JavaScript</p>
+        <a href="/" class="btn primary" target="_blank">Bekijk het</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Goede Doel</h3>
+        <p>
+          <img src="/assets/images/screenshotgoeddoel.png" alt="Screenshot van het Goede Doel project">
+          Een website over een goed doel die we moesten maken voor een schoolopdracht.
+        </p>
+        <p class="project-tags">HTML • CSS • JavaScript</p>
+        <a href="goede_doel/l1-pro-2-het-goede-doel-Razor810/GoedDoel.html" class="btn primary" target="_blank">Bekijk het</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Game in JavaScript</h3>
+        <p>
+          <img src="/assets/images/screenshotgame.png" alt="Screenshot van het Game project">
+          Voor school moesten we een game maken in JavaScript. Ik heb gekozen voor een endless runner.
+        </p>
+        <p class="project-tags">HTML • CSS • JavaScript</p>
+        <a href="Game-project/public/game.html" class="btn primary" target="_blank">Bekijk het</a>
+      </article>
+
+      <article class="project-card">
+        <h3>GameCraft</h3>
+        <p>
+          <img src="/assets/images/screenshotgamecraft.png" alt="Screenshot van het GameCraft project">
+          Dit is een teamproject op school waar we onze games in konden zetten.
+        </p>
+        <p class="project-tags">HTML • CSS • JavaScript</p>
+        <a href="https://github.com/roc-ica-2024/l2-pro-3-gamecraft-ctrl-alt-elite" class="btn primary" target="_blank">Bekijk het</a>
+      </article>
+
+    </div>
+  </div>
+</section>
 
 
-          
-          <article class="project-card">  
-            <h3>Goede Doel</h3>
-            <p><img src="/assets/images/screenshotgoeddoel.png" alt="Screenshot van het Goede Doel project">
-              Een website over een goed doel die we moesten maken voor een school opdracht.
-            </p>
-            <p class="project-tags">HTML • CSS • JavaScript</p>
-            <a href="/goede_doel/l1-pro-2-het-goede-doel-Razor810/GoedDoel.html" class="btn primary" target="_blank">Bekijk het</a>
-
-          </article>
-
-
-          <article class="project-card">
-            <h3>Game in JavaScript</h3>
-            <p><img src="/assets/images/screenshotgame.png" alt="Screenshot van het Game project">
-              Voor school moesten we een Game maken in Javascript en ik heb gekozen voor een endless runner. 
-              
-            </p>
-            <p class="project-tags">HTML • CSS • JavaScript</p>
-            <a href="/game folder/Game-project/public/game.html" class="btn primary" target="_blank">Bekijk het</a>
-
-          </article>
-
-          <article class="project-card">
-            <h3>GameCraft</h3>
-            <p><img src="/assets/images/screenshotgamecraft.png" alt="Screenshot van het GameCraft project">
-              Dit is een teamproject op school waar we onze games in konden zetten
-            </p>
-            <p class="project-tags">HTML • CSS • JavaScript</p>
-            <a href="https://github.com/roc-ica-2024/l2-pro-3-gamecraft-ctrl-alt-elite" class="btn primary" target="_blank">Bekijk het</a>
-
-
-          </article>
-
-          
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section class="section contact" id="contact">
       <div class="section-inner">
         <h2>Contact</h2>
-        <p class="section-intro">
-          Stuur me een bericht.
-        </p>
+        <p class="section-intro">Stuur me een bericht.</p>
 
         <form class="contact-form" id="contactForm">
           <div class="form-row">
@@ -134,18 +131,19 @@
               <label for="name">Naam</label>
               <input type="text" id="name" name="name" required />
             </div>
+
             <div class="form-field">
               <label for="email">E-mail</label>
               <input type="email" id="email" name="email" required />
             </div>
           </div>
+
           <div class="form-field">
             <label for="message">Bericht</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn primary full-width">
-            Verstuur bericht
-          </button>
+
+          <button type="submit" class="btn primary full-width">Verstuur bericht</button>
           <p class="form-status" id="formStatus"></p>
         </form>
       </div>
@@ -153,11 +151,9 @@
   </main>
 
   <footer class="footer">
-  <p> Jesse Klok.</p>
-</footer>
+    <p>Jesse Klok.</p>
+  </footer>
 
-
-  <script src="script.js"></script>
+  <script src="/assets/js/js.js"></script>
 </body>
-
 </html>
