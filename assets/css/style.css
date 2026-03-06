@@ -102,6 +102,10 @@ h2 {
   z-index: 1;
 }
 
+.nav {
+  z-index: 2;
+}
+
 
 
 .logo {
