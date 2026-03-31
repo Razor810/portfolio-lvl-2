@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  cursor: none; 
 }
 
 a {
@@ -240,6 +241,19 @@ h2 {
   margin: 8px 0 0;
   padding-left: 18px;
 }
+
+.cursor-effect {
+    width: 20px;
+    height: 20px;
+    background-color: #3290c79c; /* Kleur achter je cursor */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%); /* Center de cirkel op de cursor */
+    transition: transform 0.1s ease-out; /* Optioneel: vloeiende beweging */
+    z-index: 9999;
+    filter: blur(4px); /* Optioneel: vervagingseffect */
+  }
 
 /* PROJECTS */
 .projects {

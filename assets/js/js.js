@@ -25,4 +25,11 @@ if (contactForm && formStatus) {
   });
 }
 
+const cursor = document.querySelector('.cursor-effect');
+
+  document.addEventListener('mousemove', (e) => {
+    // Update de positie van de div naar de muispositie
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
 
