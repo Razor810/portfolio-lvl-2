@@ -12,32 +12,32 @@
 
 <body>
   <header class="header">
-  <nav class="nav">
-    <div class="logo">Jesse<span>Klok</span></div>
+    <nav class="nav">
+      <div class="logo">Jesse<span>Klok</span></div>
 
-    <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
 
-    <div class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">Over mij</a>
-      <a href="#projects">Projecten</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">Over mij</a>
+        <a href="#projects">Projecten</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welkom!</h1>
+      <h1>Ik ben Jesse</h1>
+      <p class="hero-tagline">Software Developer in opleiding</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Bekijk projecten</a>
+        <a href="#contact" class="btn ghost">Contact</a>
+      </div>
     </div>
-  </nav>
-</header>
-
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Welkom!</h1>
-    <h1>Ik ben Jesse</h1>
-    <p class="hero-tagline">Software Developer in opleiding</p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">Bekijk projecten</a>
-      <a href="#contact" class="btn ghost">Contact</a>
-    </div>
-  </div>
-</section>
+  </section>
 
   <main>
     <section class="section about" id="about">
@@ -48,44 +48,47 @@
           Ik ben een beginnend software developer die zich steeds verder ontwikkelt.
         </p>
 
-        <!-- Slideshow container -->
-<div class="slideshow-container">
+        <div class="skills">
+          <h1>Skills</h1>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="/assets/images/HTML5.png">
-  </div>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
 
-  <div class="mySlides fade">
-    <img src="/assets/images/CSS3.png">
-  </div>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="/assets/images/HTML5.png">
+            </div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/Javascript.png">
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="/assets/images/Figma.png">
-  </div>
+            <div class="mySlides fade">
+              <img src="/assets/images/CSS3.png">
+            </div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/PHP.png">
-  </div>
+            <div class="mySlides fade">
+              <img src="/assets/images/Javascript.png">
+            </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+            <div class="mySlides fade">
+              <img src="/assets/images/Figma.png">
+            </div>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>
+            <div class="mySlides fade">
+              <img src="/assets/images/PHP.png">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -138,23 +141,25 @@
             <a href="https://gamecraft.lucer651.nl" class="btn primary" target="_blank">Bekijk het</a>
           </article>
           <article class="project-card">
-            <h3>Test</h3>
+            <h3>Gastenboek</h3>
             <p>
               <img src="" alt="">
-              Test
+              dit project is nog in ontwikkeling
             </p>
             <p class="project-tags">HTML • CSS • JavaScript • PHP</p>
-            <a href="/projecten/gastenboek/l3-pro-2-gastenboek-Razor810/index.php" class="btn primary" target="_blank">Bekijk het</a>
+            <a href="/projecten/gastenboek/l3-pro-2-gastenboek-Razor810/index.php" class="btn primary"
+              target="_blank">Bekijk het</a>
           </article>
 
           <article class="project-card">
             <h3>Ergowijzer</h3>
             <p>
-              <img src="" alt="">
-              dit project is nog in ontwikkeling
+              <img src="assets/images/screenshotergowijzer.png" alt="Screenshot van het Ergowijzer project">
+              Ergowijzer is een teamproject waarvoor we een website moesten maken die informatie geeft over ergonomie en hoe je een goede werkplek kunt inrichten.
             </p>
             <p class="project-tags">HTML • CSS • JavaScript</p>
-            <a href="/projecten/ergowijzer/l3-pro-4-ergowijzer-404-team-not-found/html-pages/index.html" class="btn primary" target="_blank">Bekijk het</a>
+            <a href="/projecten/ergowijzer/l3-pro-4-ergowijzer-404-team-not-found/html-pages/index.html"
+              class="btn primary" target="_blank">Bekijk het</a>
           </article>
 
         </div>
@@ -165,24 +170,28 @@
 
   <footer class="footer">
 
-  <div class="socials">
-    <a href="https://discord.com/users/JE_DISCORD_ID" target="_blank"><img src="/assets/images/discord.png" alt="Discord logo" class="social-icon" id="contact">
-      <i class="fa-brands fa-discord"></i>
-    </a>
+    <div class="socials">
+      <a href="https://discord.com/users/JE_DISCORD_ID" target="_blank"><img src="/assets/images/discord.png"
+          alt="Discord logo" class="social-icon" id="contact">
+        <i class="fa-brands fa-discord"></i>
+      </a>
 
-    <a href="https://github.com/Razor810" target="_blank"><img src="/assets/images/github.png" alt="GitHub logo" class="social-icon"id="contact">
-      <i class="fa-brands fa-github"></i>
-    </a>
+      <a href="https://github.com/Razor810" target="_blank"><img src="/assets/images/github.png" alt="GitHub logo"
+          class="social-icon" id="contact">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-    <a href="mailto:606876@edu.rocmn.nl"><img src="/assets/images/outlook2.png" alt="Email logo" class="social-icon" id="contact">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
+      <a href="mailto:606876@edu.rocmn.nl"><img src="/assets/images/outlook2.png" alt="Email logo" class="social-icon"
+          id="contact">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
 
-    <a href="https://www.linkedin.com/in/JOUW-LINKEDIN" target="_blank"><img src="/assets/images/linkedin.png" alt="LinkedIn logo" class="social-icon" id="contact">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-  </div>
-</footer>
+      <a href="https://www.linkedin.com/in/JOUW-LINKEDIN" target="_blank"><img src="/assets/images/linkedin.png"
+          alt="LinkedIn logo" class="social-icon" id="contact">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
 
 
   <script src="/assets/js/js.js"></script>
